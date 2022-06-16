@@ -25,7 +25,7 @@ public class Main {
 				
 				studenti[i] = new Studente (i+1, percentualeAssenze, mediaVoti);
 				
-				
+			// stampo a video la valutazione finale 
 				if (studenti[i].promosso()) {
 					System.out.println("Promosso");
 					studentiPromossi++;
@@ -34,6 +34,7 @@ public class Main {
 				}
 			}
 			
+			// restituisco il totale degli alunni promossi
 			System.out.println("Gli alunni promossi sono in totale: " + studentiPromossi);
 			scan.close();
 	}
