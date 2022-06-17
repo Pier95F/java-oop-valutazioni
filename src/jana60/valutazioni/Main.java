@@ -16,8 +16,9 @@ public class Main {
 			int studentiPromossi = 0;
 			
 			// imposto il ciclo for per la valutazione degli studenti
-			for (int i=1; i<studenti.length; i++) {
-				System.out.println("Id studente: " + i); 
+			for (int i=0; i<studenti.length; i++) {
+				int idStudente = i +1;
+				System.out.println("Id studente: " + idStudente); 
 				System.out.println("Inserisci la percentuale delle assenze: ");
 				int percentualeAssenze = scan.nextInt();
 				System.out.println("Inserisci la media dei voti: ");
